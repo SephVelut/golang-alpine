@@ -11,6 +11,7 @@ RUN apk update && \
     /usr/glibc/usr/bin/ldconfig /lib /usr/glibc/usr/lib && \
     curl https://storage.googleapis.com/golang/go1.6.linux-amd64.tar.gz | tar xzf - -C / && \
     mv /go /goroot && \
+    mkdir /gopath && \
     mkdir /gopath/src && \
     mkdir /gopath/bin && \
     mkdir /gopath/pkg
